@@ -3253,4 +3253,7 @@ save_
        categories, added usage examples.
 
        Added a new 'Iri' content type (see _type.contents attribute).
+
+       Added '_dictionary_author.name', '_dictionary_author.id_orcid' and
+       '_dictionary_author.email' to the recommended attribute list.
 ;
