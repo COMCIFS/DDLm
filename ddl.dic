@@ -2579,6 +2579,7 @@ save_
          3     'Hester, James R.'     jxh@ansto.gov.au     0000-0002-2004-8672
          4     'Vaitkus, Antanas'     .                    .
          5     'Rowles, Matthew'      .                    .
+         6     'MacMahon, Brian'      .                    .
 
     loop_
       _dictionary_audit.version
