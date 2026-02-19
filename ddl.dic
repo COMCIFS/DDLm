@@ -11,10 +11,11 @@ data_DDL_DIC
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
     _dictionary.version           4.2.0
-    _dictionary.date              2026-01-20
+    _dictionary.date              2026-02-19
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/ddl.dic
     _dictionary.ddl_conformance   4.2.0
+    _dictionary.licence           'SPDX-License-Identifier: CC-BY-4.0'
     _dictionary.namespace         DDLm
     _description.text
 ;
@@ -612,6 +613,40 @@ save_dictionary.formalism
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+save_
+
+save_dictionary.licence
+
+    _definition.id                '_dictionary.licence'
+    _definition.class             Attribute
+    _definition.update            2026-02-19
+    _description.text
+;
+    The licence or licences under which this dictionary is distributed. They
+    should be specified using an SPDX-License-Identifier: expression
+    (https://spdx.dev/learn/handling-license-info/). If the licence is not
+    listed in the curated SPDX list (https://spdx.org/licenses/) then this
+    field may contain the full text of the licence. However, registration with
+    the SPDX project and use of an SPDX-License-Identifier: string is strongly
+    encouraged.
+
+    Ref: International Organization for Standardization (2021). ISO/IEC
+    5962:2021. Information technology — SPDX® Specification V2.2.1. Geneva:
+    International Organization for Standardization.
+;
+
+    _name.category_id             dictionary
+    _name.object_id               licence
+    _type.purpose                 Audit
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         'SPDX-License-Identifier: CC-BY-4.0'
+         'SPDX-License-Identifier: CC-BY-4.0 OR CC0-1.0+'
 
 save_
 
@@ -2552,7 +2587,8 @@ save_
                                    '_dictionary_audit.version'
                                    '_dictionary_audit.date'
                                    '_dictionary_audit.revision'
-                                   '_dictionary.doi']
+                                   '_dictionary.doi'
+                                   '_dictionary.licence']
          Dictionary  Prohibited   [ALIAS  CATEGORY_KEY  DEFINITION
                                    DESCRIPTION_EXAMPLE  ENUMERATION  IMPORT
                                    METHOD  NAME  TYPE  UNITS]
@@ -3069,7 +3105,7 @@ save_
        by explicitly specifying that it adheres to the formal grammar
        provided in SemVer version 2.0.0.
 ;
-         4.2.0                    2026-01-20
+         4.2.0                    2026-02-19
 ;
        # Please update the date above and describe the change below until
        # ready for the next release
@@ -3123,4 +3159,6 @@ save_
        the lower bound are not allowed.
 
        Changed _dictionary.namespace attribute from 'DdlDic' to 'DDLm'.
+
+       Added "_dictionary.licence" attribute.
 ;
