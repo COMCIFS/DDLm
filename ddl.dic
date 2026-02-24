@@ -696,7 +696,7 @@ save_dictionary.licensing_spdx
     listed in the curated SPDX list (https://spdx.org/licenses/) then the
     full text of the licence should be included in
     _dictionary.licensing_details. Registration with
-    the SPDX project and use of an SPDX-License-Identifier: string is strongly
+    the SPDX project and use of an SPDX license expression is strongly
     encouraged.
 
     Ref: International Organization for Standardization (2021). ISO/IEC
