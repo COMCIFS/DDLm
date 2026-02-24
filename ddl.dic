@@ -13,7 +13,7 @@ data_DDL_DIC
     _dictionary.version           4.2.0
     _dictionary.date              2026-01-20
     _dictionary.uri
-        https://raw.githubusercontent.com/COMCIFS/cif_core/master/ddl.dic
+        https://raw.githubusercontent.com/COMCIFS/DDLm/main/ddl.dic
     _dictionary.ddl_conformance   4.2.0
     _dictionary.namespace         DDLm
     _description.text
