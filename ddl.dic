@@ -11,11 +11,11 @@ data_DDL_DIC
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
     _dictionary.version           4.2.0
-    _dictionary.date              2026-02-19
+    _dictionary.date              2026-02-24
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/ddl.dic
     _dictionary.ddl_conformance   4.2.0
-    _dictionary.licence           'SPDX-License-Identifier: CC-BY-4.0'
+    _dictionary.licensing_SPDX    CC-BY-4.0
     _dictionary.namespace         DDLm
     _description.text
 ;
@@ -616,18 +616,40 @@ save_dictionary.formalism
 
 save_
 
-save_dictionary.licence
+save_dictionary.licensing_details
 
-    _definition.id                '_dictionary.licence'
+    _definition.id                '_dictionary.licensing_details'
     _definition.class             Attribute
-    _definition.update            2026-02-19
+    _definition.update            2026-02-24
     _description.text
 ;
-    The licence or licences under which this dictionary is distributed. They
-    should be specified using an SPDX-License-Identifier: expression
+    Details about the licence or licences under which this dictionary
+    is distributed. _dictionary.licensing_SPDX should be used where
+    the licence is included in the SPDX list.
+;
+
+    _name.category_id             dictionary
+    _name.object_id               licensing_details
+    _type.purpose                 Audit
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+save_
+
+save_dictionary.licensing_spdx
+
+    _definition.id                '_dictionary.licensing_SPDX'
+    _definition.class             Attribute
+    _definition.update            2026-02-24
+    _description.text
+;
+    The licence or licences under which this dictionary is distributed,
+    specified using an SPDX-License-Identifier: expression
     (https://spdx.dev/learn/handling-license-info/). If the licence is not
-    listed in the curated SPDX list (https://spdx.org/licenses/) then this
-    field may contain the full text of the licence. However, registration with
+    listed in the curated SPDX list (https://spdx.org/licenses/) then the
+    full text of the licence should be included in
+    _dictionary.licensing_details. Registration with
     the SPDX project and use of an SPDX-License-Identifier: string is strongly
     encouraged.
 
@@ -637,7 +659,7 @@ save_dictionary.licence
 ;
 
     _name.category_id             dictionary
-    _name.object_id               licence
+    _name.object_id               licensing_spdx
     _type.purpose                 Audit
     _type.source                  Assigned
     _type.container               Single
@@ -645,8 +667,8 @@ save_dictionary.licence
 
     loop_
       _description_example.case
-         'SPDX-License-Identifier: CC-BY-4.0'
-         'SPDX-License-Identifier: CC-BY-4.0 OR CC0-1.0+'
+         'CC-BY-4.0'
+         'CC-BY-4.0 OR CC0-1.0+'
 
 save_
 
@@ -3105,7 +3127,7 @@ save_
        by explicitly specifying that it adheres to the formal grammar
        provided in SemVer version 2.0.0.
 ;
-         4.2.0                    2026-02-19
+         4.2.0                    2026-02-24
 ;
        # Please update the date above and describe the change below until
        # ready for the next release
@@ -3160,5 +3182,5 @@ save_
 
        Changed _dictionary.namespace attribute from 'DdlDic' to 'DDLm'.
 
-       Added "_dictionary.licence" attribute.
+       Added dictionary licensing attributes.
 ;
