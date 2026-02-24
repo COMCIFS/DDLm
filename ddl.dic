@@ -645,7 +645,7 @@ save_dictionary.licensing_spdx
     _description.text
 ;
     The licence or licences under which this dictionary is distributed,
-    specified using an SPDX-License-Identifier: expression
+    specified using an SPDX license expression
     (https://spdx.dev/learn/handling-license-info/). If the licence is not
     listed in the curated SPDX list (https://spdx.org/licenses/) then the
     full text of the licence should be included in
