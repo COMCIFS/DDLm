@@ -3194,9 +3194,6 @@ save_
 ;
          4.2.0                    2026-02-25
 ;
-       # Please update the date above and describe the change below until
-       # ready for the next release
-
        Added the "unspecified" enumeration value for the _units.code attribute.
 
        Added DICTIONARY_AUTHOR to allow details of dictionary authors to be
@@ -3222,30 +3219,13 @@ save_
        double colon '::' " in accordance with DDLm specs and other
        discussion in Volume G 2ed (bm).
 
-       Some cosmetic changes (single quotes instead of double) to match
-       IUCr house style and angle brackets around <yyyy>-<mm>-<dd> (bm).
-
-       Updated the _enumeration_set.state attribute to inherit various
-       properties from the defining data item.
-
        Explicitly specified that the _type.contents attribute value 'Implied'
        can only be applied in the DDLm Reference dictionary.
 
-       Updated the description of the 'Symop' content type.
-
-       Updated the definition of the _method.expression attribute.
-
-       Updated definition of the _alias.deprecation_date attribute.
-       Updated definition of the _alias.dictionary_uri attribute.
        Added the _alias.dictionary_version attribute.
 
        Added _definition.update to the list of attributes that are mandatory
        in the 'Category' scope.
-
-       Clarified that empty range values that include neither the upper nor
-       the lower bound are not allowed.
-
-       Changed _dictionary.namespace attribute from 'DdlDic' to 'DDLm'.
 
        Added dictionary licensing attributes.
 
