@@ -10,7 +10,7 @@ data_DDL_DIC
 
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
-    _dictionary.version           4.2.0
+    _dictionary.version           4.2.1-dev
     _dictionary.date              2026-02-25
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/DDLm/main/ddl.dic
@@ -3236,4 +3236,9 @@ save_
 
        Added '_dictionary_author.name', '_dictionary_author.id_orcid' and
        '_dictionary_author.email' to the recommended attribute list.
+;
+         4.2.1-dev                2026-02-25
+;
+       # Please add changes below and change the update date above until ready
+       # for next release
 ;
