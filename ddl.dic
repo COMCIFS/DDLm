@@ -1228,9 +1228,9 @@ save_enumeration.range
     _definition.update            2023-01-09
     _description.text
 ;
-    The inclusive range of numerical values allowed for the defined item.
-    If the defined item has associated SU values, the reported data values
-    may fall outside these limits.
+    The inclusive range of numerical values allowed for the defined item, or
+    for elements of 'Array' types. If the defined item has associated SU values,
+    the reported data values may fall outside these limits.
 ;
     _name.category_id             enumeration
     _name.object_id               range
