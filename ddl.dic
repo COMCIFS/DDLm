@@ -13,7 +13,7 @@ data_DDL_DIC
     _dictionary.version           4.2.0
     _dictionary.date              2026-06-29
     _dictionary.uri
-        https://www.iucr.org/__data/iucr/cif/dictionaries/DDLm_4.2.0.dic
+         https://doi.org/10.1107/cifdic_000005
     _dictionary.ddl_conformance   4.2.0
     _dictionary.licensing_SPDX    CC-BY-4.0
     _dictionary.namespace         DDLm
