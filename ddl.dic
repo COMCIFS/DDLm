@@ -11,12 +11,13 @@ data_DDL_DIC
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
     _dictionary.version           4.2.0
-    _dictionary.date              2026-06-25
+    _dictionary.date              2026-06-29
     _dictionary.uri
-        https://raw.githubusercontent.com/COMCIFS/DDLm/main/ddl.dic
+        https://www.iucr.org/__data/iucr/cif/dictionaries/DDLm_4.2.0.dic
     _dictionary.ddl_conformance   4.2.0
     _dictionary.licensing_SPDX    CC-BY-4.0
     _dictionary.namespace         DDLm
+    _dictionary.doi               10.1107/cifdic_000005
     _description.text
 ;
     This dictionary contains the definitions of attributes that
@@ -2386,7 +2387,7 @@ save_type.indices
 
     _definition.id                '_type.indices'
     _definition.class             Attribute
-    _definition.update            2023-01-13
+    _definition.update            2026-06-29
     _description.text
 ;
     Used to specify the syntax construction of indices of the entries in the
@@ -3247,7 +3248,7 @@ save_
        by explicitly specifying that it adheres to the formal grammar
        provided in SemVer version 2.0.0.
 ;
-         4.2.0                    2026-06-25
+         4.2.0                    2026-06-29
 ;
        Added the "unspecified" enumeration value for the _units.code attribute.
 
