@@ -11,7 +11,7 @@ data_DDL_DIC
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
     _dictionary.version           4.2.1-dev
-    _dictionary.date              2026-07-09
+    _dictionary.date              2026-09-18
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/DDLm/main/ddl.dic
     _dictionary.ddl_conformance   4.2.0
@@ -932,10 +932,10 @@ save_dictionary_author.id_orcid
 
     _definition.id                '_dictionary_author.id_ORCID'
     _definition.class             Attribute
-    _definition.update            2023-07-13
+    _definition.update            2026-09-18
     _description.text
 ;
-    Identifier in the ORCID Registry of a publication
+    Identifier in the ORCID Registry of a dictionary
     author. ORCID is an open, non-profit, community-driven
     service to provide a registry of unique researcher
     identifiers (https://orcid.org/).
@@ -3317,11 +3317,13 @@ save_
        consequence, changed the _type.contents of _import_details.file_id
        to Uri-ref.
 ;
-         4.2.1-dev                2026-07-09
+         4.2.1-dev                2026-09-18
 ;
        # Please add changes below and change the update date above until ready
        # for next release
 
        Clarified the representation and interpretation of matrices with
        a single dimension.
+
+       Updated _dictionary_author.id_orcid description.
 ;
